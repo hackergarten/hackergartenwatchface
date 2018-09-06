@@ -135,7 +135,7 @@ class HackergartenWatchface : CanvasWatchFaceService() {
             mBackgroundPaint = Paint().apply {
                 color = Color.BLACK
             }
-            mBackgroundBitmap = BitmapFactory.decodeResource(resources, R.drawable.bg)
+            mBackgroundBitmap = BitmapFactory.decodeResource(resources, R.drawable.watchface_320)
 
             /* Extracts colors from background image to improve watchface style. */
             Palette.from(mBackgroundBitmap).generate {
@@ -438,11 +438,6 @@ class HackergartenWatchface : CanvasWatchFaceService() {
                         mSecondPaint)
 
             }
-            canvas.drawCircle(
-                    mCenterX,
-                    mCenterY,
-                    CENTER_GAP_AND_CIRCLE_RADIUS,
-                    mTickAndCirclePaint)
 
             /* Restore the canvas' original orientation. */
             canvas.restore()
