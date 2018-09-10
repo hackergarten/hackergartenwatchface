@@ -37,13 +37,13 @@ private const val INTERACTIVE_UPDATE_RATE_MS = 1000
  */
 private const val MSG_UPDATE_TIME = 0
 
-private const val HOUR_STROKE_WIDTH = 5f
-private const val MINUTE_STROKE_WIDTH = 3f
+private const val HOUR_STROKE_WIDTH = 8f
+private const val MINUTE_STROKE_WIDTH = 4f
 private const val SECOND_TICK_STROKE_WIDTH = 2f
 
 private const val CENTER_GAP_AND_CIRCLE_RADIUS = 100f
 
-private const val SHADOW_RADIUS = 6f
+private const val SHADOW_RADIUS = 8f
 
 /**
  * Analog watch face with a ticking second hand. In ambient mode, the second hand isn't
