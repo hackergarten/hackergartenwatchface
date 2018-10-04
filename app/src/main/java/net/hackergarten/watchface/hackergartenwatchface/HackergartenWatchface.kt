@@ -436,8 +436,14 @@ class HackergartenWatchface : CanvasWatchFaceService() {
                         mCenterX,
                         mCenterY - mSecondHandLength,
                         mSecondPaint)
-
             }
+
+            // Write Hackergarten to rotate with Second Pointer
+            val hackergarten = "[ Hackergarten ]"
+            mSecondPaint.textSize = 20f;
+            val hgBounds = Rect()
+            mSecondPaint.getTextBounds(hackergarten, 0, hackergarten.length, hgBounds)
+            canvas.drawText(hackergarten, mCenterX - hgBounds.width() / 2, mCenterY + hgBounds.height() / 2, mSecondPaint)
 
             /* Restore the canvas' original orientation. */
             canvas.restore()
